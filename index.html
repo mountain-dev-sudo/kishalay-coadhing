@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kishalay Coaching - Striving Towards Excellence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'kishalay-orange': '#ff6b35',
+                        'kishalay-blue': '#2c5aa0',
+                        'kishalay-green': '#28a745'
+                    },
+                    fontFamily: {
+                        'sans': ['Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row justify-between items-center py-4">
+                <!-- Logo -->
+                <div class="text-center lg:text-left mb-4 lg:mb-0">
+                    <div class="text-2xl lg:text-3xl font-bold">
+                        <span class="text-kishalay-orange">KISHALAY</span> 
+                        <span class="text-kishalay-blue">COACHING</span>
+                    </div>
+                    <div class="text-xs lg:text-sm text-gray-600 italic">...striving towards excellence</div>
+                </div>
+                
+                <!-- Navigation -->
+                <nav class="hidden lg:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-kishalay-orange font-medium transition-colors">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-kishalay-orange font-medium transition-colors">About</a>
+                    <a href="#courses" class="text-gray-700 hover:text-kishalay-orange font-medium transition-colors">Courses</a>
+                    <a href="#faculty" class="text-gray-700 hover:text-kishalay-orange font-medium transition-colors">Faculty</a>
+                    <a href="#contact" class="text-gray-700 hover:text-kishalay-orange font-medium transition-colors">Contact</a>
+                </nav>
+                
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row gap-3 w-full lg:w-auto">
+                    <a href="#admission" class="bg-kishalay-orange text-white px-4 lg:px-6 py-2 lg:py-3 rounded-lg font-semibold hover:bg-orange-600 transition-all text-center">
+                        Admission Open
+                    </a>
+                    <a href="#contact" class="border-2 border-kishalay-blue text-kishalay-blue px-4 lg:px-6 py-2 lg:py-3 rounded-lg font-semibold hover:bg-kishalay-blue hover:text-white transition-all text-center">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-gradient-to-br from-blue-50 to-orange-50 py-12 lg:py-20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                <!-- Left Content -->
+                <div class="text-center lg:text-left order-2 lg:order-1">
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-800 leading-tight mb-4">
+                        Expert Coaching<br>
+                        For <span class="text-kishalay-orange">JEE</span> & <span class="text-kishalay-blue">NEET</span><br>
+                        Success
+                    </h1>
+                    
+                    <p class="text-lg lg:text-xl text-kishalay-orange font-semibold mb-6">
+                        Class VIII to XII • All Boards • JEE Main & Advanced • NEET
+                    </p>
+                    
+                    <p class="text-gray-600 text-base lg:text-lg leading-relaxed mb-8 max-w-2xl mx-auto lg:mx-0">
+                        Transform your academic journey with our experienced faculty from FIITJEE & Aakash. 
+                        Join thousands of successful students who achieved their dreams with us.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="#courses" class="bg-kishalay-orange text-white px-6 lg:px-8 py-3 lg:py-4 rounded-lg font-semibold hover:bg-orange-600 transform hover:-translate-y-1 transition-all shadow-lg">
+                            EXPLORE COURSES
+                        </a>
+                        <a href="#contact" class="border-2 border-kishalay-blue text-kishalay-blue px-6 lg:px-8 py-3 lg:py-4 rounded-lg font-semibold hover:bg-kishalay-blue hover:text-white transition-all">
+                            GET FREE DEMO
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Content - Hero Image -->
+                <div class="flex justify-center order-1 lg:order-2">
+                    <div class="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96">
+                        <!-- Background Circles -->
+                        <div class="absolute w-60 sm:w-72 h-60 sm:h-72 bg-kishalay-orange rounded-full top-8 left-8 opacity-90"></div>
+                        <div class="absolute w-24 sm:w-32 h-24 sm:h-32 bg-kishalay-blue rounded-full top-0 right-12 opacity-90"></div>
+                        <div class="absolute w-16 sm:w-20 h-16 sm:h-20 bg-kishalay-green rounded-full bottom-0 right-0 opacity-90"></div>
+                        
+                        <!-- Main Image -->
+                        <div class="absolute w-56 sm:w-68 h-56 sm:h-68 rounded-full overflow-hidden top-10 left-10 border-4 sm:border-6 border-white shadow-2xl bg-white">
+                            <div class="w-full h-full bg-gradient-to-br from-blue-100 to-orange-100 flex items-center justify-center">
+                                <div class="text-center">
+                                    <div class="text-3xl sm:text-4xl mb-2">📚</div>
+                                    <div class="font-bold text-kishalay-blue text-lg sm:text-xl">JEE/NEET</div>
+                                    <div class="font-semibold text-kishalay-orange text-sm sm:text-base">SUCCESS</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Floating Cards -->
+                        <div class="hidden lg:block absolute -top-4 -right-8 bg-white px-4 py-2 rounded-lg shadow-lg text-center text-sm font-semibold">
+                            <div class="text-kishalay-orange">Classes Start</div>
+                            <div class="text-kishalay-blue">April 2025</div>
+                        </div>
+                        
+                        <div class="hidden lg:block absolute -bottom-4 -left-8 bg-white px-4 py-2 rounded-lg shadow-lg text-center text-sm font-semibold">
+                            <div class="text-kishalay-blue">Limited Seats</div>
+                            <div class="text-kishalay-orange">Book Now!</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-12 lg:py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-4">Why Choose Kishalay Coaching?</h2>
+                <p class="text-gray-600 text-lg max-w-3xl mx-auto">
+                    With years of experience and thousands of successful students, we are committed to your academic excellence
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+                <div class="text-center p-6 bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl">
+                    <div class="text-4xl mb-4">🎯</div>
+                    <h3 class="font-bold text-lg mb-2 text-kishalay-orange">Expert Faculty</h3>
+                    <p class="text-gray-600 text-sm">Ex-FIITJEE & Ex-Aakash experienced teachers</p>
+                </div>
+                
+                <div class="text-center p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl">
+                    <div class="text-4xl mb-4">📖</div>
+                    <h3 class="font-bold text-lg mb-2 text-kishalay-blue">Advanced Material</h3>
+                    <p class="text-gray-600 text-sm">Comprehensive study materials & resources</p>
+                </div>
+                
+                <div class="text-center p-6 bg-gradient-to-br from-green-50 to-green-100 rounded-xl">
+                    <div class="text-4xl mb-4">🏆</div>
+                    <h3 class="font-bold text-lg mb-2 text-kishalay-green">Proven Results</h3>
+                    <p class="text-gray-600 text-sm">Track record of JEE/NEET success stories</p>
+                </div>
+                
+                <div class="text-center p-6 bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl">
+                    <div class="text-4xl mb-4">💻</div>
+                    <h3 class="font-bold text-lg mb-2 text-purple-600">Flexible Learning</h3>
+                    <p class="text-gray-600 text-sm">Online + Offline classes available</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="py-12 lg:py-20 bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-4">Our Courses</h2>
+                <p class="text-gray-600 text-lg">Comprehensive coaching for all major competitive exams</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                <!-- JEE Preparation -->
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-kishalay-orange rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white font-bold text-xl">JEE</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">JEE Main & Advanced</h3>
+                        <p class="text-gray-600 text-sm">Complete preparation for engineering entrance</p>
+                    </div>
+                    
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center text-sm text-gray-600">
+                            <span class="text-kishalay-green mr-2">✓</span> Mathematics
+                        </li>
+                        <li class="flex items-center text-sm text-gray-600">
+                            <span class="text-kishalay-green mr-2">✓</span> Physics
+                        </li>
+                        <li class="flex items-center text-sm text-gray-600">
+                            <span class="text-kishalay-green mr-2">✓</span> Chemistry
+                        </li>
+                        <li class="flex items-center text-sm text-gray-600">
+                            <span class="text-kishalay-green mr-2">✓</span> Regular Mock Tests
+                        </li>
+                    </ul>
+                    
+                    <a href="#contact" class="w-full bg-kishalay-orange text-white py-2 rounded-lg font-semibold hover:bg-orange-600 transition-colors block text-center">
+                        Learn More
+                    </a>
+                </div>
+                
+                <!-- NEET Preparation -->
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-kishalay-blue rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white font-bold text-lg">NEET</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">NEET Preparation</h3>
+                        <p class="text-gray-600 text-sm">Medical entrance exam preparation</p>
+                    </div>
+                    
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center text-sm text-gray-600">
+                            <span class="text-kishalay-green mr-2">✓</span> Physics
+                        </li>
+                        <li class="flex items-center text-sm text-gray-600">
+                            <span class="text-kishalay-green mr-2">✓</span> Chemistry
+                        </li>
+                        <li class="flex items-center text-sm text-gray-600">
+                            <span class="text-kishalay-green mr-2">✓</span> Biology
+                        </li>
+                        <li class="flex items-center text-sm text-gray-600">
+                            <span class="text-kishalay-green mr-2">✓</span> Practice Tests
+                        </li>
+                    </ul>
+                    
+                    <a href="#contact" class="w-full bg-kishalay-blue text-white py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors block text-center">
+                        Learn More
+                    </a>
+                </div>
+                
+                <!-- Board Exams -->
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-kishalay-green rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white font-bold text-sm">BOARD</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Board Exams</h3>
+                        <p class="text-gray-600 text-sm">Class VIII to XII - All Boards</p>
+                    </div>
+                    
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center text-sm text-gray-600">
+                            <span class="text-kishalay-green mr-2">✓</span> CBSE
+                        </li>
+                        <li class="flex items-center text-sm text-gray-600">
+                            <span class="text-kishalay-green mr-2">✓</span> ICSE
+                        </li>
+                        <li class="flex items-center text-sm text-gray-600">
+                            <span class="text-kishalay-green mr-2">✓</span> ISC-WB
+                        </li>
+                        <li class="flex items-center text-sm text-gray-600">
+                            <span class="text-kishalay-green mr-2">✓</span> All Subjects
+                        </li>
+                    </ul>
+                    
+                    <a href="#contact" class="w-full bg-kishalay-green text-white py-2 rounded-lg font-semibold hover:bg-green-700 transition-colors block text-center">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-12 lg:py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-4">Our Features</h2>
+                <p class="text-gray-600 text-lg">Everything you need for academic success</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                <div class="flex items-start space-x-4">
+                    <div class="w-12 h-12 bg-kishalay-orange rounded-lg flex items-center justify-center flex-shrink-0">
+                        <span class="text-white font-bold">👨‍🏫</span>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-lg text-gray-800 mb-2">Expert Faculty</h3>
+                        <p class="text-gray-600 text-sm">Experienced teachers from FIITJEE & Aakash institutes</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start space-x-4">
+                    <div class="w-12 h-12 bg-kishalay-blue rounded-lg flex items-center justify-center flex-shrink-0">
+                        <span class="text-white font-bold">📚</span>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-lg text-gray-800 mb-2">Study Material</h3>
+                        <p class="text-gray-600 text-sm">Advanced level study materials and practice sets</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start space-x-4">
+                    <div class="w-12 h-12 bg-kishalay-green rounded-lg flex items-center justify-center flex-shrink-0">
+                        <span class="text-white font-bold">📝</span>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-lg text-gray-800 mb-2">Mock Tests</h3>
+                        <p class="text-gray-600 text-sm">Regular mock tests with detailed result analysis</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start space-x-4">
+                    <div class="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <span class="text-white font-bold">💻</span>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-lg text-gray-800 mb-2">Online + Offline</h3>
+                        <p class="text-gray-600 text-sm">Flexible learning options to suit your schedule</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start space-x-4">
+                    <div class="w-12 h-12 bg-pink-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <span class="text-white font-bold">👥</span>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-lg text-gray-800 mb-2">Batch & 1:1 Classes</h3>
+                        <p class="text-gray-600 text-sm">Group classes and personalized one-on-one sessions</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start space-x-4">
+                    <div class="w-12 h-12 bg-indigo-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <span class="text-white font-bold">🤝</span>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-lg text-gray-800 mb-2">Doubt Sessions & PTM</h3>
+                        <p class="text-gray-600 text-sm">Regular doubt clearing and parent-teacher meetings</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admission Section -->
+    <section id="admission" class="py-12 lg:py-20 bg-gradient-to-r from-kishalay-orange to-orange-400">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl lg:text-4xl font-bold text-white mb-4">Admission Open for 2025!</h2>
+            <p class="text-white text-lg lg:text-xl mb-8 max-w-3xl mx-auto">
+                Classes starting from April 2025. Limited seats available - secure your spot today!
+            </p>
+            
+            <div class="grid md:grid-cols-3 gap-6 lg:gap-8 mb-8">
+                <div class="bg-white bg-opacity-20 backdrop-blur-sm rounded-xl p-6 text-white">
+                    <div class="text-3xl mb-2">📅</div>
+                    <h3 class="font-bold text-lg mb-2">Classes Start</h3>
+                    <p>April 2025</p>
+                </div>
+                
+                <div class="bg-white bg-opacity-20 backdrop-blur-sm rounded-xl p-6 text-white">
+                    <div class="text-3xl mb-2">🎯</div>
+                    <h3 class="font-bold text-lg mb-2">Limited Seats</h3>
+                    <p>Book Early!</p>
+                </div>
+                
+                <div class="bg-white bg-opacity-20 backdrop-blur-sm rounded-xl p-6 text-white">
+                    <div class="text-3xl mb-2">🏆</div>
+                    <h3 class="font-bold text-lg mb-2">All Boards</h3>
+                    <p>CBSE, ICSE, ISC-WB</p>
+                </div>
+            </div>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#contact" class="bg-white text-kishalay-orange px-6 lg:px-8 py-3 lg:py-4 rounded-lg font-bold hover:bg-gray-100 transition-all shadow-lg">
+                    ENROLL NOW
+                </a>
+                <a href="#contact" class="border-2 border-white text-white px-6 lg:px-8 py-3 lg:py-4 rounded-lg font-bold hover:bg-white hover:text-kishalay-orange transition-all">
+                    GET FREE DEMO
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-12 lg:py-20 bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-4">Contact Us</h2>
+                <p class="text-gray-600 text-lg">Get in touch for admission and more information</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-8 lg:gap-12">
+                <!-- Contact Information -->
+                <div class="space-y-6">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-kishalay-orange rounded-lg flex items-center justify-center flex-shrink-0">
+                            <span class="text-white font-bold">📍</span>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-lg text-gray-800 mb-2">Location</h3>
+                            <p class="text-gray-600">
+                                Baghajatin, Kolkata<br>
+                                (Near Sri Sri Satyanarayan Ramthakur Seva Ashram)
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-kishalay-blue rounded-lg flex items-center justify-center flex-shrink-0">
+                            <span class="text-white font-bold">📞</span>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-lg text-gray-800 mb-2">Phone / WhatsApp</h3>
+                            <p class="text-gray-600">
+                                <a href="tel:+918777855301" class="hover:text-kishalay-orange">+91 87778 55301</a><br>
+                                <a href="tel:+918910312288" class="hover:text-kishalay-orange">+91 89103 12288</a>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-kishalay-green rounded-lg flex items-center justify-center flex-shrink-0">
+                            <span class="text-white font-bold">⏰</span>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-lg text-gray-800 mb-2">Class Timings</h3>
+                            <p class="text-gray-600">
+                                Morning & Evening Batches Available<br>
+                                Flexible Scheduling for Working Students
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="bg-white rounded-xl shadow-lg p-6 lg:p-8">
+                    <h3 class="text-xl font-bold text-gray-800 mb-6">Get Free Consultation</h3>
+                    
+                    <form class="space-y-4">
+                        <div>
+                            <input type="text" placeholder="Your Name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-kishalay-orange focus:border-transparent">
+                        </div>
+                        
+                        <div>
+                            <input type="tel" placeholder="Phone Number" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-kishalay-orange focus:border-transparent">
+                        </div>
+                        
+                        <div>
+                            <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-kishalay-orange focus:border-transparent">
+                                <option>Select Course</option>
+                                <option>JEE Main & Advanced</option>
+                                <option>NEET Preparation</option>
+                                <option>Board Exams (VIII-XII)</option>
+                                <option>All Subjects</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <textarea placeholder="Your Message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-kishalay-orange focus:border-transparent"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-kishalay-orange text-white py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <div class="text-2xl font-bold mb-2">
+                    <span class="text-kishalay-orange">KISHALAY</span> 
+                    <span class="text-kishalay-blue">COACHING</span>
+                </div>
+                <p class="text-gray-400 italic mb-4">...striving towards excellence</p>
+                <p class="text-gray-400 text-sm">
+                    © 2025 Kishalay Coaching. All rights reserved. | Specialist in JEE & NEET Preparation
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
